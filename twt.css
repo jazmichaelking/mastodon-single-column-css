@@ -1,0 +1,128 @@
+//this needs to be improved for various likely widths eg phone, tablet, small laptop
+@media (min-width: 1024px) {
+    .tabs-bar {display: flex;
+    width: 585px;
+    margin-left: calc(25% + 155px);
+    z-index: 1;
+  }
+
+//fix the preview column for signed-out viewers
+.landing-page #mastodon-timeline .column:last-child {min-width: 100px; margin-top: 0px;}
+
+//hide search in main nav
+.tabs-bar > a:nth-child(5) {display: none;}
+
+  .columns-area
+  {
+    width: calc(50% + 300px);
+    margin: -60px auto auto;
+  }
+
+  .column {display: none;}
+
+// this is your main column width
+  .column:last-child
+  {
+    display: flex;
+    min-width: 600px;
+    margin-top: 55px;
+  }
+
+// full screen background
+.ui {background-image: url("https://path/to/image") !important;}
+}
+
+// remove pin column
+.text-btn {display: none;}
+
+// left hand column header
+.drawer__header {
+  height: 110px;
+  background-image: url("https://path/to/image") !important;
+  background-position: left bottom !important;
+  background-repeat: no-repeat !important;
+ }
+
+// fiddly fix for mouseover on icons, needs improving
+.drawer__header a:hover {opacity: 0.90; background:#eceff1;}
+
+// colours. considering css variables for this going forward
+.column-header {background:#8e8d8a; color:#eae7dc;} 
+
+.tabs-bar, .drawer__header, .search__input, .column-header__back-button, .column-header__button, .landing-page #mastodon-timeline, .landing-page__forms, .landing-page__information {
+    background: #eceff1;
+}
+
+.flex-spacer, .getting-started, .getting-started__wrapper, .column-link__badge, .column-subheading {
+    background: #f6f6f6;
+}
+.column-link {background: #fff; color: #7e685a;}
+.column-header__back-button, .column-header__button {background: #8e8d8a; color: #eae7dc;}
+.column-header__back-button:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.column-link:hover, .button.button-alternative-2 {background: #e7717d; color: #fff;}
+.column-header__button:hover {color: #fff;}
+
+
+.tabs-bar__link {
+    color: #8e8d8a;
+    border-bottom: 2px solid #e7717d;
+}
+
+.tabs-bar__link.active {
+    border-bottom: 2px solid #e7717d; color: #e85a4f;
+}
+
+.button, .tabs-bar__link:active, .tabs-bar__link:focus, .tabs-bar__link:hover, .simple_form .block-button, .simple_form .button, .simple_form button, .button.button-alternative {
+    background: #e7717d; color: #fff;
+}
+
+.button:hover, .simple_form .block-button:hover, .simple_form .button:hover, .simple_form button:hover, .button.button-alternative-2:active, .button.button-alternative-2:focus, .button.button-alternative-2:hover, .button.button-alternative:active, .button.button-alternative:focus, .button.button-alternative:hover {
+    background-color: #e85a4f;
+}
+
+.compose-form .autosuggest-textarea__suggestions, .compose-form .compose-form__buttons-wrapper, .search__input:focus, .column-header__collapsible-inner, .column-header__button.active, .column-header__button.active:hover {
+    background: #8e8d8a; color:#eae7dc;
+}
+
+.load-more:hover {background: #eae7dc;}
+.compose-form .compose-form__warning {background: #e98074;}
+.icon-button.inverted {color: #eae7dc;}
+.icon-button.inverted:hover, .icon-button.inverted:active, .icon-button.inverted:focus {color: #fff;}
+.compose-form .compose-form__buttons-wrapper .character-counter__wrapper .character-counter { color: #eae7dc;}
+.text-icon-button {color: #eae7dc;}
+.text-icon-button:hover {color: #fff;}
+.text-icon-button.active {color: #e98074;}
+.drawer__inner {background: #eceff1; height: auto;}
+.drawer__tab {color: #8e8d8a;}
+.privacy-dropdown__option:hover, .privacy-dropdown__option.active {
+    background: #e85a4f;
+    color: #000000;}
+.privacy-dropdown__option.active:hover {
+    background: #e98074;
+}
+.privacy-dropdown.active .privacy-dropdown__value.active {
+    background: #e85a4f;}
+.icon-button.inverted.active {color:#e98074;}
+.column-header > .column-header__back-button {
+    color: #fff;
+}
+.landing-page #mastodon-timeline {color: #eae7dc;}
+.column-settings__section {color: #eae7dc;}
+.setting-toggle__label {color: #eae7dc;}
+
+// I do not remember what this fixed...
+.drawer__pager {overflow: auto;}
+
+// remove mascot
+.drawer__inner__mastodon, .landing-page__mascot {display:none;}
+
+//bolder focus on CW
+.compose-form .spoiler-input__input {
+    border: 3px;
+    border-radius: 4px;
+    border-color: #e98074;
+    border-style: solid;
+}

@@ -1,4 +1,3 @@
-//this needs to be improved for various likely widths eg phone, tablet, small laptop
 @media (min-width: 1024px) {
     .tabs-bar {display: flex;
     width: 585px;
@@ -6,11 +5,9 @@
     z-index: 1;
   }
 
-//fix the preview column for signed-out viewers
 .landing-page #mastodon-timeline .column:last-child {min-width: 100px; margin-top: 0px;}
 
-//hide search in main nav
-.tabs-bar > a:nth-child(5) {display: none;}
+  .tabs-bar > a:nth-child(5) {display: none;}
 
   .columns-area
   {
@@ -20,7 +17,6 @@
 
   .column {display: none;}
 
-// this is your main column width
   .column:last-child
   {
     display: flex;
@@ -28,25 +24,18 @@
     margin-top: 55px;
   }
 
-// full screen background
-.ui {background-image: url("https://path/to/image") !important;}
+.ui {background-image: url("https://jazcouk.files.wordpress.com/2018/09/bg1.jpg") !important;}
 }
-
-// remove pin column
 .text-btn {display: none;}
-
-// left hand column header
 .drawer__header {
   height: 110px;
-  background-image: url("https://path/to/image") !important;
+  background-image: url("https://twtcymru.files.wordpress.com/2019/01/toot-square-grey-285.png") !important;
   background-position: left bottom !important;
   background-repeat: no-repeat !important;
  }
 
-// fiddly fix for mouseover on icons, needs improving
 .drawer__header a:hover {opacity: 0.90; background:#eceff1;}
 
-// colours. considering css variables for this going forward
 .column-header {background:#8e8d8a; color:#eae7dc;} 
 
 .tabs-bar, .drawer__header, .search__input, .column-header__back-button, .column-header__button, .landing-page #mastodon-timeline, .landing-page__forms, .landing-page__information {
@@ -95,8 +84,21 @@
 .text-icon-button {color: #eae7dc;}
 .text-icon-button:hover {color: #fff;}
 .text-icon-button.active {color: #e98074;}
-.drawer__inner {background: #eceff1; height: auto;}
+
+.drawer__inner {
+    background: #eceff1; height: auto;
+}
+.drawer__inner__mastodon, .landing-page__mascot {display:none;}
+
+.compose-form .spoiler-input__input {
+    border: 3px;
+    border-radius: 4px;
+    border-color: #e98074;
+    border-style: solid;
+}
+
 .drawer__tab {color: #8e8d8a;}
+
 .privacy-dropdown__option:hover, .privacy-dropdown__option.active {
     background: #e85a4f;
     color: #000000;}
@@ -113,16 +115,4 @@
 .column-settings__section {color: #eae7dc;}
 .setting-toggle__label {color: #eae7dc;}
 
-// I do not remember what this fixed...
 .drawer__pager {overflow: auto;}
-
-// remove mascot
-.drawer__inner__mastodon, .landing-page__mascot {display:none;}
-
-//bolder focus on CW
-.compose-form .spoiler-input__input {
-    border: 3px;
-    border-radius: 4px;
-    border-color: #e98074;
-    border-style: solid;
-}

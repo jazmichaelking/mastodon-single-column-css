@@ -11,4 +11,4 @@ Being an Internet dinosaur the open and community feel of Mastodon appeals great
 
 I believe this poses an unecessary barrier to entry, so I set out to create a single column instance using a vanilla install. https://toot.wales is our working example, and the project goal is to ensure a working single column instance using only the custom CSS option; no file changes, no forks, this should be able to work on a managed host like masto.host
 
-Versions will be numbered to match the vanill aMastodon version it is known to work with, in case you're not in a hurry to upgrade there will always being prior versions available.
+Versions will be numbered to match the vanilla Mastodon version it is known to work with in case you're not in a hurry to upgrade - there will always be prior versions available.

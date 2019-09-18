@@ -1,3 +1,5 @@
+### Now that Mastodon has a native single column view, this project is deprecated. ###
+
 # mastodon-single-column-css
 Custom CSS for server settings to create a single column Web client using vanilla Mastodon
 

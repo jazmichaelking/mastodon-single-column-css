@@ -1,0 +1,1 @@
+.audio-player__canvas:not([title]),.audio-player__canvas[title=""],.media-gallery__gifv video:not([title]),.media-gallery__gifv video[title=""],.media-gallery__item-thumbnail img:not([alt]),.media-gallery__item-thumbnail img[alt=""],.video-player video:not([title]),.video-player video[title=""]{filter:blur(2px)}

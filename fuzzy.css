@@ -1,1 +1,4 @@
 .audio-player__canvas:not([title]),.audio-player__canvas[title=""],.media-gallery__gifv video:not([title]),.media-gallery__gifv video[title=""],.media-gallery__item-thumbnail img:not([alt]),.media-gallery__item-thumbnail img[alt=""],.video-player video:not([title]),.video-player video[title=""]{filter:blur(2px)}
+
+/* Optional, add the following to remove blur on hover. Credit: Paul Watson @lazcorp@thegoblin.market */
+.audio-player__canvas:not([title]):hover,.audio-player__canvas[title=“”]:hover,.media-gallery__gifv video:not([title]):hover,.media-gallery__gifv video[title=“”]:hover,.media-gallery__item-thumbnail img:not([alt]):hover,.media-gallery__item-thumbnail img[alt=“”]:hover,.video-player video:not([title]):hover,.video-player video[title=“”]:hover{filter:blur(0)}

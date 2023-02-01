@@ -4,5 +4,8 @@
 /* If you added blur, optionally uncomment the next line to remove blur on hover. Credit: Paul Watson @lazcorp@thegoblin.market */
 /* .audio-player__canvas:not([title]):hover,.audio-player__canvas[title=""]:hover,.media-gallery__gifv video:not([title]):hover,.media-gallery__gifv video[title=""]:hover,.media-gallery__item-thumbnail img:not([alt]):hover,.media-gallery__item-thumbnail img[alt=""]:hover,.video-player video:not([title]):hover,.video-player video[title=""]:hover{filter:blur(0)} */
 
-/* Uncomment the following lines for a red border instead of blur */
+/* Uncomment the following lines for a dashed red border (no blur) */
 /* .media-gallery__item-thumbnail img:not([alt]), .audio-player__canvas:not([title]), .video-player video:not([title]), .media-gallery__gifv video:not([title]), .media-gallery__item-thumbnail img[alt=""], .audio-player__canvas[title=""], .video-player video[title=""], .media-gallery__gifv video[title=""] {border: 2px dashed rgba(251, 47, 47, 0.5);box-sizing: border-box;} */
+
+/* Uncomment the following lines for a yellow and black "caution tape" border (no blur) */
+/* .media-gallery__item-thumbnail img:not([alt]), .audio-player__canvas:not([title]), .video-player video:not([title]), .media-gallery__gifv video:not([title]), .media-gallery__item-thumbnail img[alt=""], .audio-player__canvas[title=""], .video-player video[title=""], .media-gallery__gifv video[title=""] {border: 3px solid pink; border-image: repeating-linear-gradient(-55deg, #000, #000 20px, #ffb101 20px, #ffb101 40px)10;box-sizing: border-box;} */
